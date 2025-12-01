@@ -14,12 +14,6 @@ void distribute_matrix_2d(int m, int n, std::vector<std::pair<std::pair<int, int
 {
     // TODO: Write your code here
 
-    /** 
-        Ed says that we can assume uniformly dist data
-        so we can just use the data row and col to determine
-        the correct processor to send the data to
-    **/ 
-
     int rank, size;
     MPI_Comm_rank(comm_2d, &rank);
     MPI_Comm_size(comm_2d, &size);
